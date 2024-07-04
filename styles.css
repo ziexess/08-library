@@ -53,7 +53,8 @@ body {
     font-size: 4rem;
     font-weight: 700;
     margin-left: 2rem;
-    color: var(--font-color)
+    color: var(--font-color);
+    cursor: pointer;
 }
 
 .hero {
@@ -101,6 +102,13 @@ body {
     border-radius: 10px;
     width: 130px;
     font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttons button:hover {
+    background-color: var(--font-color);
+    color: var(--primary-color);
 }
 
 .card p {
@@ -138,6 +146,16 @@ form {
     gap: 1rem;
 }
 
+form input {
+    border-radius: 10px;
+    border: 1px solid black;
+    transition: box-shadow 0.3s ease;
+}
+
+form input:hover {
+    box-shadow: 2px 3px 8px 2px #888888;
+}
+
 .form label {
     font-size: 1.5rem;
 }
@@ -148,6 +166,13 @@ form {
     border: 1px solid black;
     border-radius: 10px;
     font-size: 2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+    background-color: var(--primary-color);
+    color: var(--font-color)
 }
 
 button span {
